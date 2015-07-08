@@ -3,10 +3,19 @@ package org.github.hrabur.demo.rest.api;
 import java.time.ZonedDateTime;
 
 public class Event {
+	private String id;
 	private String title;
 	private String description;
 	private ZonedDateTime start;
 	private ZonedDateTime end;
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
 
 	public String getTitle() {
 		return title;
